@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Fill the entire screen */
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+/* Flex Display */
+body {
+  font-family: "Sarabun", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the header */
+header {
+  background-color: cornflowerblue;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  background: rgb(200, 222, 250);
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+  width: 20%;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: rgb(200, 222, 250);
+  padding: 10px 20px 0 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Remove underline */
+nav a {
+  text-decoration: none;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  height: fit-content;
+  background-color: #f1f1f1;
+  padding: 20px 50px 0 50px;
+}
+
+article h1 {
+  font-size: 25px;
+}
+
+/* article img {
+  width: 400px;
+  height: 400px;
+} */
+
+/* Style the footer */
+footer {
+  background-color: lightsteelblue;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
